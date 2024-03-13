@@ -1,19 +1,22 @@
 {
-  "name": "@uniswap/sdk-core",
+  "name": "@tdatanerd/thrusterfi-sdk-core",
   "license": "MIT",
   "version": "4.2.0",
-  "description": "⚒️ An SDK for building applications on top of Uniswap V3",
+  "description": "⚒️ An SDK for building applications on top of Thrusterfi",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-sdk-core.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdatanerd/thrusterfi-sdk-core.git"
+  },
   "keywords": [
-    "uniswap",
-    "ethereum"
+    "thruster",
+    "blast"
   ],
-  "module": "dist/sdk-core.esm.js",
+  "module": "dist/thrusterfi-sdk-core.esm.js",
   "scripts": {
     "build": "tsdx build",
     "start": "tsdx watch",
@@ -40,5 +43,10 @@
     "printWidth": 120,
     "semi": false,
     "singleQuote": true
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/tdatanerd/thrusterfi-sdk-core/issues"
+  },
+  "homepage": "https://github.com/tdatanerd/thrusterfi-sdk-core#readme",
+  "author": ""
 }
