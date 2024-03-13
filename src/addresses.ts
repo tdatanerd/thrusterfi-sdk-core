@@ -47,7 +47,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.BNB]: '0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6',
   [ChainId.POLYGON]: '0x9e5A52f57b3038F1B8EeE45F28b3C1967e22799C',
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
-  [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070'
+  [ChainId.BLAST]: '0xb4A7D971D0ADea1c73198C97d7ab3f9CE4aaFA13'
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -62,7 +62,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.AVALANCHE]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.BNB]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
-  [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035'
+  [ChainId.BLAST]: '0x98994a9A7a2570367554589189dC9772241650f6'
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -225,14 +225,25 @@ const ROOTSTOCK_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x0B14ff67f0014046b4b99057Aec4509640b3947A'
 }
 
-const BLAST_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd',
-  multicallAddress: '0xdC7f370de7631cE9e2c2e1DCDA6B3B5744Cf4705',
-  quoterAddress: '0x6Cdcd65e03c1CEc3730AeeCd45bc140D57A25C77',
-  v3MigratorAddress: '0x15CA7043CD84C5D21Ae76Ba0A1A967d42c40ecE0',
-  nonfungiblePositionManagerAddress: '0xB218e4f7cF0533d4696fDfC419A0023D33345F28',
-  tickLensAddress: '0x2E95185bCdD928a3e984B7e2D6560Ab1b17d7274',
-  swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66'
+// const BLAST_ADDRESSES: ChainAddresses = {
+//   v3CoreFactoryAddress: '0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd',
+//   multicallAddress: '0xdC7f370de7631cE9e2c2e1DCDA6B3B5744Cf4705',
+//   quoterAddress: '0x6Cdcd65e03c1CEc3730AeeCd45bc140D57A25C77',
+//   v3MigratorAddress: '0x15CA7043CD84C5D21Ae76Ba0A1A967d42c40ecE0',
+//   nonfungiblePositionManagerAddress: '0xB218e4f7cF0533d4696fDfC419A0023D33345F28',
+//   tickLensAddress: '0x2E95185bCdD928a3e984B7e2D6560Ab1b17d7274',
+//   swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66'
+// }
+
+// https://docs.thruster.finance/docs/informational/contracts
+const THRUSTER_BLAST_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x71b08f13B3c3aF35aAdEb3949AFEb1ded1016127',
+  multicallAddress: '0x2024C59EE713dB918c9ba0Cb84C5e2C6c6f834C5',
+  quoterAddress: '0x3b299f65b47c0bfAEFf715Bc73077ba7A0a685bE',
+  v3MigratorAddress: '', // Notfound
+  nonfungiblePositionManagerAddress: '0x434575EaEa081b735C985FA9bf63CD7b87e227F9',
+  tickLensAddress: '0x796B39328b92472b2Bd950AEB20D950611e02EF6',
+  swapRouter02Address: '' // Notfound
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
@@ -256,7 +267,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ZORA]: ZORA_ADDRESSES,
   [ChainId.ZORA_SEPOLIA]: ZORA_SEPOLIA_ADDRESSES,
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
-  [ChainId.BLAST]: BLAST_ADDRESSES
+  [ChainId.BLAST]: THRUSTER_BLAST_ADDRESSES
 }
 
 /* V3 Contract Addresses */
