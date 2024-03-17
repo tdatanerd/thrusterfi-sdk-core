@@ -237,7 +237,7 @@ const ROOTSTOCK_ADDRESSES: ChainAddresses = {
 
 // https://docs.thruster.finance/docs/informational/contracts
 const THRUSTER_BLAST_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x71b08f13B3c3aF35aAdEb3949AFEb1ded1016127',
+  v3CoreFactoryAddress: '0xa08ae3d3f4dA51C22d3c041E468bdF4C61405AaB',
   multicallAddress: '0x2024C59EE713dB918c9ba0Cb84C5e2C6c6f834C5',
   quoterAddress: '0x3b299f65b47c0bfAEFf715Bc73077ba7A0a685bE',
   v3MigratorAddress: '', // Notfound
